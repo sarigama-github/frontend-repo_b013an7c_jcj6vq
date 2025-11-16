@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Network, Route, Gauge, Vote } from 'lucide-react'
+import { Network, Route, Gauge, Trophy } from 'lucide-react'
 
 const features = [
   {
@@ -20,7 +20,7 @@ const features = [
   {
     title: 'Governance & Rewards',
     description: 'Stake $CYPHER, earn yield, vote on protocol direction.',
-    icon: Vote,
+    icon: Trophy,
   },
 ]
 
