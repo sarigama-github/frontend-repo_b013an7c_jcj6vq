@@ -12,6 +12,11 @@ import Token from './components/Token'
 import Utility from './components/Utility'
 import Vision from './components/Vision'
 import Messaging from './components/Messaging'
+import SocialProof from './components/SocialProof'
+import AnimatedRouteVisualizer from './components/AnimatedRouteVisualizer'
+import Tokenomics from './components/Tokenomics'
+import MicroInteractions from './components/MicroInteractions'
+import Waitlist from './components/Waitlist'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 
@@ -29,10 +34,15 @@ function App() {
         <Pillars />
         <Stats />
         <Security />
+        <SocialProof />
+        <AnimatedRouteVisualizer />
         <Token />
+        <Tokenomics />
         <Utility />
         <Vision />
         <Messaging />
+        <MicroInteractions />
+        <Waitlist />
         <CTA />
       </main>
       <Footer />
