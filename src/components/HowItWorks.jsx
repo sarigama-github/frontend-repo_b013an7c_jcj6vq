@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
-import { Wallet, ArrowsLeftRight, CheckCircle2 } from 'lucide-react'
+import { Wallet, ArrowLeftRight, CheckCircle2 } from 'lucide-react'
 
 const steps = [
   { title: 'Connect wallet', icon: Wallet, desc: 'Link your preferred wallet in seconds.' },
-  { title: 'Select chains and amounts', icon: ArrowsLeftRight, desc: 'Pick origin/destination with precision quotes.' },
+  { title: 'Select chains and amounts', icon: ArrowLeftRight, desc: 'Pick origin/destination with precision quotes.' },
   { title: 'Execute trade', icon: CheckCircle2, desc: 'MEV-protected, gas-optimized settlement.' },
 ]
 
