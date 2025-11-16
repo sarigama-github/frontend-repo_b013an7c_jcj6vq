@@ -1,11 +1,23 @@
-import Spline from '@splinetool/react-spline'
+import { useEffect, useState, Suspense, lazy } from 'react'
 import { motion } from 'framer-motion'
 
+const Spline = lazy(() => import('@splinetool/react-spline'))
+
 export default function Hero() {
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   return (
     <section className="relative min-h-[90vh] w-full overflow-hidden bg-black" id="home">
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/44zrIZf-iQZhbQNQ/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        {mounted && (
+          <Suspense fallback={<div className="w-full h-full bg-gradient-to-b from-black via-black/80 to-black" />}> 
+            <Spline scene="https://prod.spline.design/44zrIZf-iQZhbQNQ/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+          </Suspense>
+        )}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black" />
       </div>
 
