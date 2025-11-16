@@ -1,26 +1,31 @@
 import { motion } from 'framer-motion'
-import { Network, Route, Gauge, Trophy } from 'lucide-react'
+import { Route, Trophy, Network, Gamepad2, LayoutDashboard } from 'lucide-react'
 
 const features = [
   {
-    title: 'Omnichain Liquidity',
-    description: 'Seamless cross-chain trading without bridges.',
-    icon: Network,
-  },
-  {
-    title: 'Intelligent Routing',
-    description: 'AI-optimized swap paths across Ethereum, Base, BSC, Polygon.',
+    title: 'Smart Routing',
+    description: 'Trade across pools engineered for efficiency. The system routes you through the smartest path always.',
     icon: Route,
   },
   {
-    title: 'Trader Dashboard',
-    description: 'Advanced margin, position tracking, whale monitoring.',
-    icon: Gauge,
+    title: 'Engagement Model',
+    description: 'Stake, farm, or play. Every engagement earns you XP, badges, and protocol dividends.',
+    icon: Trophy,
   },
   {
-    title: 'Governance & Rewards',
-    description: 'Stake $CYPHER, earn yield, vote on protocol direction.',
-    icon: Trophy,
+    title: 'Omnichain',
+    description: 'No bridges. No friction. One pool spanning every major chain.',
+    icon: Network,
+  },
+  {
+    title: 'Gamification',
+    description: 'Your trades become quests. Your consistency ranks you higher. Your presence defines prestige.',
+    icon: Gamepad2,
+  },
+  {
+    title: 'Dashboard',
+    description: 'Visualize flows, track whales, manage margins, and monitor rewards from a singular, immersive cockpit.',
+    icon: LayoutDashboard,
   },
 ]
 
@@ -29,10 +34,10 @@ export default function Features() {
     <section id="features" className="relative bg-[#0A0A0A] py-20">
       <div className="mx-auto max-w-7xl px-4">
         <div className="mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">Engineered for Pros</h2>
-          <p className="mt-3 text-gray-400 max-w-2xl">Institutional-grade infrastructure with consumer-grade UX.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">Built for Thinkers. Designed for Doers.</h2>
+          <p className="mt-3 text-gray-400 max-w-3xl">A platform where every trade contributes to the intelligence of the whole.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((f, i) => (
             <motion.div
               key={f.title}
